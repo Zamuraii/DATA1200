@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../DAPE1400"
+		},
+		{
+			"path": "../../../DAPE1300"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DATA1200"
+	}
+}
