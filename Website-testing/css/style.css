@@ -1,17 +1,56 @@
-.topnav{
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace
 }
 
-.topnav a{
-  float: center;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
+body{
+  min-height: 100vh;
+  background-image: url('/Website-testing/media/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.dlfex{
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding: 1.5em 5.5em;
+  background-color: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  z-index: 100;
+}
+
+.logo img{
+  height: 25%;
+  width: 25%;
+}
+
+.navbar a{
+  position: relative;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 3em;
+}
+
+.navbar a::before{
+  content: '';
+  position: absolute;
+  top:100%;
+  left:0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before{
+  width: 100%;
 }
